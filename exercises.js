@@ -19,6 +19,7 @@ function multiplyArguments() {
 
 function invokeCallback(cb) {
     //invoke cb
+    cb();
 }
 
 function sumArray(numbers, cb) {
