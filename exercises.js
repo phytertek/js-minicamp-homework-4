@@ -26,6 +26,9 @@ function sumArray(numbers, cb) {
     //sum up all of the integers in the numbers array
     //pass the result to cb
     //no return is necessary
+    cb(numbers.reduce(function(acc, cv) {
+        return acc + cv;
+    }));
 }
 
 function forEach(arr, cb) {
